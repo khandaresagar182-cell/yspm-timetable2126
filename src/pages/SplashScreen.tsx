@@ -23,7 +23,7 @@ export const SplashScreen: React.FC = () => {
                 {/* YSPM Logo */}
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mb-6 md:mb-8 drop-shadow-2xl animate-in slide-in-from-top duration-700">
                     <img
-                        src="/yspm-logo.png"
+                        src={`${import.meta.env.BASE_URL}yspm-logo.png`}
                         alt="YSPM Logo"
                         className="w-full h-full object-contain"
                     />

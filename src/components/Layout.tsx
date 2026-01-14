@@ -17,7 +17,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           onClick={() => navigate('/')}
         >
           <img
-            src="/yspm-logo.png"
+            src={`${import.meta.env.BASE_URL}yspm-logo.png`}
             alt="YSPM Logo"
             className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
           />
