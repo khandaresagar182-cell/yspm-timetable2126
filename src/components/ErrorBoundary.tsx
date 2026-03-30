@@ -1,4 +1,4 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { Component, type ErrorInfo, type ReactNode } from 'react';
 
 interface Props {
     children: ReactNode;
@@ -21,7 +21,7 @@ class ErrorBoundary extends Component<Props, State> {
 
     public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
         // Log error to console in development only
-        if (process.env.NODE_ENV === 'development') {
+        if (import.meta.env.DEV) {
             console.error('Error caught by boundary:', error, errorInfo);
         }
     }
@@ -39,7 +39,7 @@ class ErrorBoundary extends Component<Props, State> {
                             <p className="text-gray-600 mb-6">
                                 We're sorry, but something unexpected happened. Please try refreshing the page.
                             </p>
-                            {process.env.NODE_ENV === 'development' && this.state.error && (
+                            {import.meta.env.DEV && this.state.error && (
                                 <details className="text-left bg-gray-50 p-4 rounded mb-4">
                                     <summary className="cursor-pointer font-semibold text-red-600 mb-2">
                                         Error Details (Dev Only)
