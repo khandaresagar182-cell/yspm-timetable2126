@@ -1,4 +1,3 @@
-# YOUWARE.md
 
 # Class Time Table Website - YSPM
 
@@ -34,8 +33,11 @@ This is a responsive website for displaying class timetables for the Department 
 ## Development
 
 ### Commands
-- **Install Dependencies**: `npm install`
-- **Start Dev Server**: `npm run dev`
+- **Install Dependencies (Frontend)**: `npm install`
+- **Install Dependencies (Backend)**: `cd server && npm install`
+- **Start Full App (Frontend + Backend)**: Run `start_app.bat` (Windows)
+- **Start Dev Server (Frontend Only)**: `npm run dev`
+- **Start Dev Server (Backend Only)**: `cd server && npm run dev`
 - **Build for Production**: `npm run build`
 - **Preview Build**: `npm run preview`
 
@@ -55,6 +57,28 @@ export const timetableData = {
 };
 ```
 
-## Deployment
-The project is built using Vite and outputs to the `dist/` directory. It is a Single Page Application (SPA).
-- Ensure the web server serves `index.html` for all routes.
+## Deployment Guide
+
+### Database (MySQL)
+**Important**: You cannot simply upload a "db file".
+1.  **Export Local DB**: Open your local database tool (e.g., phpMyAdmin) and **Export** the `yspm_timetable` database to a `.sql` file.
+2.  **Import on Server**: Log in to your hosting provider's database manager and **Import** that `.sql` file.
+3.  **Automatic Setup**: If deploying to a fresh database, the application will automatically create the necessary tables (`users`, `practical_resources`) when it first runs.
+
+### Environment Variables
+On your production server, create a `.env` file in the `server/` directory with specific values for that environment:
+```ini
+PORT=3000
+DB_HOST=your_production_db_host
+DB_USER=your_production_db_user
+DB_PASSWORD=your_production_db_password
+DB_NAME=yspm_timetable
+```
+
+### Security Updates
+- **Password Hashing**: Passwords are now securely hashed using `bcrypt`.
+- **Default Login**: If the `users` table is empty, a default admin will be created:
+  - **Email**: `admin@yspm.com`
+  - **Password**: `admin123`
+- **Action Required**: Change this password immediately after first login.
+

@@ -18,9 +18,9 @@ export const timetableData: Record<string, BatchSchedule> = {
     ],
     'Tuesday': [
       { subject: 'JPR', type: 'Lab', time: '10:00-12:00' },
-      { subject: 'DCN', type: 'Class', time: '12:40-2:40' },
-      { subject: 'JPR', type: 'Class', time: '2:50-3:50' },
-      { subject: 'UID', type: 'Lab', time: '3:50-4:50' }
+      { subject: 'DCN', type: 'Class', time: '12:40-1:40' },
+      { subject: 'JPR', type: 'Class', time: '1:40-2:40' },
+      { subject: 'UID', type: 'Lab', time: '2:50-4:50' }
     ],
     'Wednesday': [
       { subject: 'MML', type: 'Lab', time: '10:00-12:00' },
@@ -32,7 +32,7 @@ export const timetableData: Record<string, BatchSchedule> = {
       { subject: 'DCN', type: 'Lab', time: '10:00-12:00' },
       { subject: 'MIC', type: 'Class', time: '12:40-1:40' },
       { subject: 'EVS', type: 'Class', time: '1:40-2:40' },
-      { subject: 'JPR', type: 'Class', time: '3:50-4:50' },
+      { subject: 'JPR', type: 'Class', time: '2:50-3:50' },
       { subject: 'DCN', type: 'Class', time: '3:50-4:50' }
     ],
     'Friday': [
@@ -57,9 +57,9 @@ export const timetableData: Record<string, BatchSchedule> = {
     ],
     'Tuesday': [
       { subject: 'UID', type: 'Lab', time: '10:00-12:00' },
-      { subject: 'DCN', type: 'Class', time: '12:40-2:40' },
-      { subject: 'JPR', type: 'Class', time: '2:50-3:50' },
-      { subject: 'MML', type: 'Lab', time: '3:50-4:50' }
+      { subject: 'DCN', type: 'Class', time: '12:40-1:40' },
+      { subject: 'JPR', type: 'Class', time: '1:40-2:40' },
+      { subject: 'MML', type: 'Lab', time: '2:50-4:50' }
     ],
     'Wednesday': [
       { subject: 'DCN', type: 'Lab', time: '10:00-12:00' },
@@ -71,6 +71,7 @@ export const timetableData: Record<string, BatchSchedule> = {
       { subject: 'UID', type: 'Lab', time: '10:00-12:00' },
       { subject: 'MIC', type: 'Class', time: '12:40-1:40' },
       { subject: 'EVS', type: 'Class', time: '1:40-2:40' },
+      { subject: 'JPR', type: 'Class', time: '2:50-3:50' },
       { subject: 'DCN', type: 'Class', time: '3:50-4:50' }
     ],
     'Friday': [

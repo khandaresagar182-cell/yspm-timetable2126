@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+# Server (deployed separately via Docker)
+server/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database
+*.sql.backup
+current_backup.sql
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
