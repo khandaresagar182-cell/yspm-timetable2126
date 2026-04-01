@@ -651,6 +651,23 @@ app.get('/api/health', async (req: Request, res: Response) => {
     }
 });
 
+// Serve static files from the React app (dist folder)
+const distPath = path.join(__dirname, '../../dist');
+if (fs.existsSync(distPath)) {
+    app.use(express.static(distPath));
+
+    // Handle React routing - return index.html for all non-API routes
+    app.get('*', (req: Request, res: Response) => {
+        // Don't interfere with API routes
+        if (req.path.startsWith('/api')) {
+            return res.status(404).json({ status: 'error', message: 'API endpoint not found' });
+        }
+        res.sendFile(path.join(distPath, 'index.html'));
+    });
+} else {
+    logger.warn(`Dist folder not found at ${distPath}. Frontend will not be served.`);
+}
+
 // Global Error Handler
 app.use((err: any, req: Request, res: Response, next: any) => {
     logger.error("Unhandled Server Error:", err);
