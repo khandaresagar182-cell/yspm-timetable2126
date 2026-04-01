@@ -1,0 +1,41 @@
+=== DB DUMP ===
+ID: 51 | Name: "[UNIT I] sagaR " | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=sNw50GNh-k5JH17x
+ID: 50 | Name: "[UNIT I] Dcn" | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=sNw50GNh-k5JH17x
+ID: 48 | Name: "[UNIT I] sagar" | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=sNw50GNh-k5JH17x
+ID: 47 | Name: "[UNIT I] daadad" | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=aodPKRpsaDC7Ai7g
+ID: 45 | Name: "[UNIT I] fundamental of data communication" | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=aodPKRpsaDC7Ai7g
+ID: 44 | Name: "[UNIT I] fundamental of data communication and computer network " | Cat: Links | isLink: 1 | Batch: GLOBAL | Sub: DCN
+   URL: https://youtu.be/GfIvQiamXFU?si=aodPKRpsaDC7Ai7g
+ID: 43 | Name: "Question Bank Of MML Class Test -I (1) (2).pdf" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: ClassTest
+   URL: 
+ID: 42 | Name: "QUESTION BANK-CT-I-MIC QB -AN.docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: ClassTest
+   URL: 
+ID: 41 | Name: "Question Bank CT-I AI EVS 25-26 (1).docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: ClassTest
+   URL: 
+ID: 40 | Name: "Class Test 1 JAVA Question Bank (1).docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: ClassTest
+   URL: 
+ID: 39 | Name: "topic 1-mic 8086.pdf" | Cat: Notes | isLink: 0 | Batch: GLOBAL | Sub: MIC
+   URL: 
+ID: 38 | Name: "Unit Test 1 JAVA Question Bank (1).docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: UnitTest
+   URL: 
+ID: 37 | Name: "QUESTION BANK-UT-I-DCN (1).docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: UnitTest
+   URL: 
+ID: 36 | Name: "Unit Test _I (1) (1).pdf" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: UnitTest
+   URL: 
+ID: 35 | Name: "Question Bank UT-I AI EVS 25-26 (2).docx" | Cat: General | isLink: 0 | Batch: GLOBAL | Sub: UnitTest
+   URL: 
+ID: 33 | Name: "Type-II(B) Matrices (1).pdf" | Cat: Homework | isLink: 0 | Batch: GLOBAL | Sub: MML
+   URL: 
+ID: 32 | Name: "Type-II (A) Matrices (1).pdf" | Cat: Homework | isLink: 0 | Batch: GLOBAL | Sub: MML
+   URL: 
+ID: 31 | Name: "Unit 1 Java Notes (1).pdf" | Cat: Notes | isLink: 0 | Batch: GLOBAL | Sub: JPR
+   URL: 
+ID: 30 | Name: "Unit - II notes Inheritance, Interface and Packages.pdf" | Cat: Notes | isLink: 0 | Batch: GLOBAL | Sub: JPR
+   URL: 
+ID: 29 | Name: "WhatsApp Image 2026-01-30 at 4.27.04 PM (1).pdf" | Cat: Notice | isLink: 0 | Batch: NoticeAttachment | Sub: Notice
+   URL: 

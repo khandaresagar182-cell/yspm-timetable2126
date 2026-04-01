@@ -1,0 +1,38 @@
+services:
+  backend:
+    build: .
+    container_name: yspm-api
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - DATABASE_URL=postgresql://admin:${DB_PASSWORD:-yspm_Secure_2026!}@postgres:5432/yspm_timetable
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:5173}
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: yspm-database
+    # No host ports exposed — only accessible from the backend container
+    volumes:
+      - yspm_data:/var/lib/postgresql/data
+      - ./init_database.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-yspm_Secure_2026!}
+      - POSTGRES_DB=yspm_timetable
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d yspm_timetable"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+volumes:
+  yspm_data:
